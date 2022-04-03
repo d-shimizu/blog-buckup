@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "ブログを WordPress から GitHub Pages に移行した"
+title:  "GitHub Pages を使ってみる"
 date:   2021-05-09 12:01:20 +0900
 categories: Tech
 ---
 
-ブログを WordPress から GitHub Pages に移行した。
+GitHub Pages を使ってみることにした。
 
 ブログの引越しを何度かやって、ここ数年は AWS の Amazon Lightsail で動かしていた WordPress で運用していたけど、メンテナンスも面倒になってきたので移行を検討し、 GitHub Pages でやってみることにした。
-
-GitHub Pages を選んだのは、技術系のものは GitHub にまとめてみようかなと思った程度で、あんまり意味はない。
+GitHub Pages を選んだのは、技術系のものは GitHub にまとめてみようかなと思った程度で、あんまり意味はない。記事の移行についてはまだ何も考えていない。
 
 GitHub Pages では Jekyll という静的コンテンツを生成するツールが、GitHub Pages の公式ドキュメントでもおすすめされていたので、それを使ってみることにした。
+
 
 ## 初期設定メモ
 
