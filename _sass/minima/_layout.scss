@@ -230,7 +230,10 @@
 .post-content {
   margin-bottom: $spacing-unit;
 
+
   h2 {
+    border-bottom: 1px dotted #999;
+	margin: 1em 0 0.5em;
     @include relative-font-size(2);
 
     @include media-query($on-laptop) {
@@ -239,6 +242,8 @@
   }
 
   h3 {
+    border-bottom: 1px dotted #999;
+	margin: 1em 0 0.5em;
     @include relative-font-size(1.625);
 
     @include media-query($on-laptop) {
