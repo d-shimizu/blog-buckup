@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="home">
+
+  {{ content }}
+
+  <ul class="post-archives">
+    {% for post in site.posts %}
+
+    <li>
+      <span class="post-meta">
+	{{ post.date | date: "%Y/%m/%d" }}
+      </span>
+
+      <h2>
+	<a class="post-link" href="{{ post.url | relative_url }}" lang="ja">{{ post.title | escape }}{% if post.external-url %} &rarr;{% endif %}</a>
+	</h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

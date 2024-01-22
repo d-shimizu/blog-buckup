@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "d-shimizu blog"
-email: daisuke.shimizu.ds@gmail.com
+title: "d-shimizu/blog"
+email: shimizu.daisuke.sd@gmail.com
 #description: >- # this means to ignore newlines until "baseurl:"
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
@@ -34,20 +34,30 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+
+permalink: /article/:year/:month/:day/:title
+#permalink: /:year/:month/:day/:title
+paginate_path: /articles/:num/
+#paginate_path: "/posts/:num"
+paginate: 5
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
 header_pages:
   - about.md
+  - articles.md
 
 show_excerpts: true
 
@@ -55,6 +65,5 @@ rss: rss
 
 highlighter: rouge
 
-permalink: /article/:year/:month/:day/:title
 
 google_analytics: UA-162050652-1
