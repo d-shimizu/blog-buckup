@@ -65,5 +65,6 @@ rss: rss
 
 highlighter: rouge
 
+#excerpt_separator: <!--more-->
 
 google_analytics: UA-162050652-1

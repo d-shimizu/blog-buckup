@@ -6,5 +6,4 @@ permalink: /about/
 
 ## Profile
 
-ITエンジニアをやっています。 Web Operations / IT Infra / Linux / Container / Cloud Computing / Computer Science / Python / Golang などに興味があります。
-
+ITエンジニアをやっています。主にWebシステムのインフラ周りの設計・構築・運用をやっています。

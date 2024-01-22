@@ -18,12 +18,14 @@ layout: default
 	  <p class="post-meta">{{ post.date | date: "%Y/%m/%d" }}{% include tags.html tags=post.tags %}</p>
 	</header>
 
+	<!--
 	<div class="post-content">
 	  {{ post.excerpt }}
 	</div>
+	-->
 
 	{% if post.content contains site.excerpt_separator %}
-        <p class="post-continue">
+    <p class="post-continue">
 	  <a href="{{ post.url | relative_url }}"> Read more &rarr;</a>
 	</p>
 	{% endif %}
